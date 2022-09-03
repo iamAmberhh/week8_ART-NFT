@@ -12919,4 +12919,27 @@ h1 img, .h1 img {
   }
 }
 
+.art-img-block img {
+  border: 10px solid black;
+}
+
+@media (min-width: 768px) {
+  .art-img-block img {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .art-img-block {
+    position: absolute;
+    top: 201px;
+    left: 80px;
+    right: 0;
+  }
+  .art-img-block img {
+    height: 270px;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
