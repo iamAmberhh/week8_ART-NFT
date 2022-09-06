@@ -43,14 +43,15 @@
       <div class="collapse navbar-collapse justify-content-lg-end flex-grow-0" id="navbarSupportedContent">
         <ul class="navbar-nav py-2 py-lg-0 mb-lg-0 ">
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" aria-current="page" href="explore.html">探索</a>
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" aria-current="page"
+              href="explore.html">探索</a>
           </li>
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" href="#">市值</a>
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" href="ranking.html">市值</a>
           </li>
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold" href="#"><span
-                class="d-block d-lg-none">連結錢包</span><i
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold" href="#" data-bs-toggle="modal"
+              data-bs-target="#wallet"><span class="d-block d-lg-none">連結錢包</span><i
                 class="d-none d-lg-block fas fa-wallet align-bottom mt-1"></i></a>
           </li>
         </ul>
@@ -59,6 +60,79 @@
 
     </div>
   </nav>
+
+
+  <div class="modal fade" id="wallet" tabindex="-1" aria-labelledby="walletLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <p class="modal-title  fs-4" id="walletLabel">連結你的錢包</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="my-1 ps-0 row row-cols-1 row-cols-md-2 g-1">
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect01.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">MetaMask</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect02.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Coinbase Wallet</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect03.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">WalletConnect</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect04.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Phantom</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect05.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Glow</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect06.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Fortmatic</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center p-0 mb-lg-3">
+            <a href="#" class="btn btn-danger text-white px-5 py-1 border-black m-0">連結錢包</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   
@@ -130,9 +204,9 @@
     </ul>
 
     <!-- Tab panes -->
-    <div class="tab-content mb-7">
+    <div class="tab-content mb-7 pb-7">
         <div class="tab-pane" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
-           <div class="bg-white border border-1 px-2 py-4 px-lg-7 py-lg-7 position-relative mb-2 mb-lg-7">
+           <div class="tab-block bg-white border border-1 px-2 py-4 px-lg-7 py-lg-7 position-relative mb-2 mb-lg-7">
             <h3 class="fw-bold mb-2">追求者送我的花</h3>
             <div class="d-flex justify-content-between mb-lg-7">
                 <p class="me-lg-7 mb-3 pb-lg-6">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
@@ -160,7 +234,7 @@
                 <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
             </div>
            </div>
-           <div class="bg-white border border-1 px-2 py-4 px-lg-7 py-lg-7 position-relative mb-lg-7">
+           <div class="tab-block bg-white border border-1 px-2 py-4 px-lg-7 py-lg-7 position-relative mb-lg-7">
             <h3 class="fw-bold mb-2">我家窗前的鳥</h3>
             <div class="d-flex justify-content-between mb-lg-7">
                 <p class="me-lg-7 mb-3 pb-lg-6">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
@@ -252,9 +326,9 @@
 </script>
 
     <footer class="text-center border-top border-1">
-        <div class="border-top border-3 my-1">
-          <p class="p-3">© ART NFT. All Rights Reserved</p>
-        </div>
+      <div class="border-top border-3 my-1">
+        <p class="p-3">© ART NFT. All Rights Reserved</p>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

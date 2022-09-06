@@ -43,14 +43,15 @@
       <div class="collapse navbar-collapse justify-content-lg-end flex-grow-0" id="navbarSupportedContent">
         <ul class="navbar-nav py-2 py-lg-0 mb-lg-0 ">
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" aria-current="page" href="explore.html">探索</a>
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" aria-current="page"
+              href="explore.html">探索</a>
           </li>
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" href="#">市值</a>
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold nav-border" href="ranking.html">市值</a>
           </li>
           <li class="nav-item border-lg-left">
-            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold" href="#"><span
-                class="d-block d-lg-none">連結錢包</span><i
+            <a class="nav-link header-nav-link mx-3 py-3 py-lg-5 text-center fw-bold" href="#" data-bs-toggle="modal"
+              data-bs-target="#wallet"><span class="d-block d-lg-none">連結錢包</span><i
                 class="d-none d-lg-block fas fa-wallet align-bottom mt-1"></i></a>
           </li>
         </ul>
@@ -59,6 +60,79 @@
 
     </div>
   </nav>
+
+
+  <div class="modal fade" id="wallet" tabindex="-1" aria-labelledby="walletLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <p class="modal-title  fs-4" id="walletLabel">連結你的錢包</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="my-1 ps-0 row row-cols-1 row-cols-md-2 g-1">
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect01.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">MetaMask</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect02.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Coinbase Wallet</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect03.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">WalletConnect</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect04.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Phantom</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect05.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Glow</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="#" class="d-block btn btn-outline-black d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/connect06.png" alt="icon" class="connect-icon me-2">
+                  <span class="font-squada">Fortmatic</span>
+                </div>
+                <i class="fas fa-check text-danger"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0 justify-content-center p-0 mb-lg-3">
+            <a href="#" class="btn btn-danger text-white px-5 py-1 border-black m-0">連結錢包</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   
@@ -143,7 +217,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">散步遇到的女人</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Zoe Jiang</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -160,7 +234,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">爆炸頭的母親</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Yui</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -177,7 +251,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">夏天的時候</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Bug Lin</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -191,7 +265,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">追求者送我的花</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Michael</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -205,7 +279,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">今天釣到的魚</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Wei JJ</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -219,7 +293,7 @@
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">人生中的貓咪們</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Even Lai</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -243,18 +317,21 @@
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
             <div class="swiper-slide swiper-slide-2 p-3 d-flex flex-column justify-content-between">
                 <h3 class="text-white fs-2 font-squada">Wei<br>JJ</h3>
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
             <div class="swiper-slide swiper-slide-3 p-3 d-flex flex-column justify-content-between">
                 <h3 class="text-white fs-2 font-squada">Bug<br>Lin</h3>
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
         </div>
 
@@ -279,7 +356,7 @@
                 <div class="d-flex p-2 flex-column border border-1 border-white h-100">
                     <div class="mb-auto">
                         <p>唯一想擁有的人，唯一不可以擁有的人</p>
-                        <span>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                     <div class="mt-auto ms-auto">
                         <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
@@ -353,13 +430,37 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="assets/js/swiper.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    centeredSlides:true,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+
+      },
+    },
+  });
+</script>
 
     <footer class="text-center border-top border-1">
-        <div class="border-top border-3 my-1">
-          <p class="p-3">© ART NFT. All Rights Reserved</p>
-        </div>
+      <div class="border-top border-3 my-1">
+        <p class="p-3">© ART NFT. All Rights Reserved</p>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

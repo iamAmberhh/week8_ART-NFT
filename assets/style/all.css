@@ -279,13 +279,14 @@ table {
 }
 
 caption {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #6c757d;
   text-align: left;
 }
 
 th {
+  font-weight: normal;
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
@@ -2116,7 +2117,7 @@ progress {
 }
 
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   -webkit-box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -12617,6 +12618,53 @@ h1 img, .h1 img {
   }
 }
 
+.connect-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header .btn-close {
+  margin-left: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: 992px) {
+  .modal-header .btn-close {
+    display: none;
+  }
+}
+
+.modal-body i {
+  visibility: hidden;
+}
+
+.modal-body .btn-outline-black:hover {
+  background: #fff;
+  border: 1px solid #E6553B;
+  color: black;
+}
+
+.modal-body .btn-outline-black:hover i {
+  visibility: visible;
+}
+
+.modal-footer a {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .modal-footer {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
 .vertical {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -12785,7 +12833,6 @@ h1 img, .h1 img {
 }
 
 .swiper-slide-next, .swiper-slide-prev {
-  width: 306px;
   height: 262px;
   margin: auto 0;
   -webkit-filter: grayscale(100%);
@@ -12798,9 +12845,12 @@ h1 img, .h1 img {
   display: none;
 }
 
+.swiper-slide-next .swiper-block, .swiper-slide-prev .swiper-block {
+  display: none;
+}
+
 .swiper-slide-active {
-  width: 636px;
-  height: 439px;
+  height: 362px;
 }
 
 .swiper-slide-active .btn {
@@ -12814,6 +12864,12 @@ h1 img, .h1 img {
 .swiper-slide-active .btn-outline-black:hover {
   background-color: #E6553B;
   color: white;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide-active {
+    height: 439px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -12846,6 +12902,23 @@ h1 img, .h1 img {
 
 .swiper-slide-3 {
   background-image: url(../images/artist03.jpg);
+}
+
+.swiper-block {
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (min-width: 992px) {
+  .swiper-block {
+    width: 50%;
+    bottom: 24px;
+    left: 24px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
 }
 
 .artwork-img {
@@ -12940,6 +13013,81 @@ h1 img, .h1 img {
   .art-img-block img {
     height: 270px;
   }
+}
+
+.tab-block {
+  position: relative;
+}
+
+.tab-block::before {
+  position: absolute;
+  content: "";
+  border-top: 16px solid #000;
+  border-right: 16px solid transparent;
+  top: 0;
+  left: 0;
+}
+
+.tab-block::after {
+  position: absolute;
+  content: "";
+  border-top: 16px solid #000;
+  border-left: 16px solid transparent;
+  top: 0;
+  right: 0;
+}
+
+.table-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.table-triangle {
+  position: relative;
+  z-index: 10;
+}
+
+.table-triangle a::after {
+  position: absolute;
+  content: "+";
+  color: white;
+  bottom: 0;
+  right: 5px;
+  z-index: 5;
+}
+
+.table-triangle::after {
+  position: absolute;
+  content: "";
+  border-bottom: 32px solid #000;
+  border-left: 32px solid transparent;
+  bottom: 0;
+  right: 0;
+}
+
+.table-triangle:hover::after {
+  border-bottom: 32px solid #E6553B;
+}
+
+@media (min-width: 992px) {
+  .table-triangle::before {
+    display: none;
+  }
+  .table-triangle::after {
+    display: none;
+  }
+}
+
+.table-turn {
+  background-color: #fff;
+}
+
+.table-turn a::after {
+  content: "-";
+}
+
+.table-turn::after {
+  border-bottom: 32px solid #E6553B;
 }
 
 /*# sourceMappingURL=all.css.map */
