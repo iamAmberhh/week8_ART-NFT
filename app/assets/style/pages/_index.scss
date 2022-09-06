@@ -132,7 +132,6 @@
     height: 500px;
 }
 .swiper-slide-next,.swiper-slide-prev{
-    width: 306px;
     height: 262px;
     margin:auto 0 ;
     filter: grayscale(100%);
@@ -140,10 +139,12 @@
     .btn{
         display: none;
     }
+    .swiper-block{
+        display: none;
+    }
 }
 .swiper-slide-active{
-    width: 636px;
-    height: 439px;
+    height: 362px;
     .btn{
         display: block;
     }
@@ -153,6 +154,9 @@
             background-color: $danger;
             color:white;
         }
+    }
+    @include media-breakpoint-up(lg){
+        height: 439px;
     }
 }
 .swiper-pagination-bullet{
@@ -181,7 +185,19 @@
         background-image: url(../images/artist03.jpg);
     }
 }
-
+.swiper-block{
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.85);
+    @include media-breakpoint-up(lg){
+        width: 50%;
+        bottom: 24px;
+        left: 24px;
+        background-color: rgba(255,255,255,0.85);
+    }
+}
 .artwork-img{
     background-image: url(../images/art09.jpg);
     background-position: center;

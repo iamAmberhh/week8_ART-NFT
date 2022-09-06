@@ -86,7 +86,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">散步遇到的女人</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Zoe Jiang</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -103,7 +103,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">爆炸頭的母親</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Yui</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -120,7 +120,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">夏天的時候</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Bug Lin</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -134,7 +134,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">追求者送我的花</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Michael</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -148,7 +148,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">今天釣到的魚</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Wei JJ</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -162,7 +162,7 @@ current: index
                     <h3 class="fs-5 fw-bold px-1 py-2 mb-0 border-1 border-bottom ">人生中的貓咪們</h3>
                     <div class="d-flex justify-content-between p-1 font-squada lh-sm">
                         <p>Even Lai</p>
-                        <span><i class="fas fa-coins me-1"></i>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                 </div>
             </a>
@@ -186,18 +186,21 @@ current: index
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
             <div class="swiper-slide swiper-slide-2 p-3 d-flex flex-column justify-content-between">
                 <h3 class="text-white fs-2 font-squada">Wei<br>JJ</h3>
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
             <div class="swiper-slide swiper-slide-3 p-3 d-flex flex-column justify-content-between">
                 <h3 class="text-white fs-2 font-squada">Bug<br>Lin</h3>
                 <div class="mt-auto ms-auto">
                     <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
                 </div>
+                <div class="p-3 swiper-block">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
             </div>
         </div>
 
@@ -222,7 +225,7 @@ current: index
                 <div class="d-flex p-2 flex-column border border-1 border-white h-100">
                     <div class="mb-auto">
                         <p>唯一想擁有的人，唯一不可以擁有的人</p>
-                        <span>300</span>
+                        <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                     </div>
                     <div class="mt-auto ms-auto">
                         <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
@@ -296,5 +299,29 @@ current: index
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="assets/js/swiper.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 24,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    centeredSlides:true,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+
+      },
+    },
+  });
+</script>

@@ -19,5 +19,8 @@ $(function() {
     $('.search-form').addClass('ms-auto');
     $('.search-form').removeClass('p-1');
   });
+  $('.table-triangle').click(function(e){
+    $(this).toggleClass('table-turn');
+  })
 });
 

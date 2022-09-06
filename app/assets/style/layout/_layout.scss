@@ -78,3 +78,43 @@ h1{
         border-left:1px solid black;
     }
 }
+.connect-icon{
+    width: 16px;
+    height: 16px;
+}
+.modal-header{
+    position: relative;
+    .btn-close{
+        margin-left: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    @include media-breakpoint-up(lg){
+        .btn-close{
+            display: none;
+        }
+    }
+}
+.modal-body{
+    i{
+        visibility: hidden;
+    }
+    .btn-outline-black:hover{
+        background: #fff;
+        border:1px solid $danger;
+        color:black;
+        i{
+            visibility: visible;
+        }
+    }
+}
+.modal-footer{
+    a{
+        width: 100%;
+    }
+    @include media-breakpoint-up(lg){
+        width: auto;
+        margin: 0 auto;
+    }
+}

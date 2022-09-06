@@ -15,7 +15,6 @@
     padding: 16px;
     span{
         display: none;
-        // margin-top: 16px;
     }
     @include media-breakpoint-up(lg){
         padding: 16px 48px;
@@ -24,5 +23,45 @@
             display: block;
             
         }
+    }
+}
+.art-img-block{
+    img{
+        border:10px solid black;
+    }
+    @include media-breakpoint-up(md){
+        img{
+
+            width: 100%;
+            height: 380px;
+        }
+    }
+    @include media-breakpoint-up(lg){
+        position: absolute;
+        top:201px;
+        left: 80px;
+        right: 0;
+        img{
+            height: 270px;
+        }
+    }
+}
+.tab-block{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        border-top: 16px solid $black;
+        border-right: 16px solid transparent;
+        top:0;
+        left:0;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        border-top: 16px solid $black;
+        border-left: 16px solid transparent;
+        top:0;
+        right:0;
     }
 }
