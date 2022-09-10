@@ -24,7 +24,6 @@ h1{
         }
     }
 }
-
 .nav-border{
     position: relative;
     &::after{
@@ -117,4 +116,7 @@ h1{
         width: auto;
         margin: 0 auto;
     }
+}
+.offcanvas{
+    height: 50px;
 }

@@ -15,16 +15,16 @@ current: explore
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h2 class="fs-1 font-squada">Michael</h2>
                         <ul class="d-flex">
-                            <li class="me-1"><a href="#">
+                            <li class="me-1"><a href="#" class="artist-media">
                                     <i class="fa-brands fa-discord"></i>
                                 </a></li>
-                            <li class="me-1"><a href="#">
+                            <li class="me-1"><a href="#" class="artist-media">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a></li>
-                            <li class="me-1"><a href="#">
+                            <li class="me-1"><a href="#" class="artist-media">
                                     <i class="fa-solid fa-globe"></i>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="#" class="artist-media">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a></li>
                         </ul>
@@ -87,16 +87,16 @@ current: explore
             
             <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 ps-0 mb-2 mb-lg-0 art-img-block pe-lg-7">
                 <li class="col mx-auto">
-                    <img src="assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art" class="img-fluid">
+                    <img src="assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art" class="img-fluid object-fit-cover">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/art13.jpg" alt="art" class="img-fluid d-none d-md-block">
+                    <img src="assets/images/art13.jpg" alt="art" class="img-fluid object-fit-cover d-none d-md-block">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/art14.jpg" alt="art" class="img-fluid d-none d-lg-block">
+                    <img src="assets/images/art14.jpg" alt="art" class="img-fluid object-fit-cover d-none d-lg-block">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art" class="img-fluid d-none d-lg-block">
+                    <img src="assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art" class="img-fluid object-fit-cover d-none d-lg-block">
                 </li>
             </ul>
             <div class="d-lg-none text-center">
@@ -115,16 +115,16 @@ current: explore
             
             <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1 ps-0 mb-2 mb-lg-0 art-img-block pe-lg-7">
                 <li class="col mx-auto">
-                    <img src="assets/images/art27.jpg" alt="art" class="img-fluid">
+                    <img src="assets/images/art27.jpg" alt="art" class="img-fluid object-fit-cover">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/art20.jpg" alt="art" class="img-fluid d-none d-md-block">
+                    <img src="assets/images/art20.jpg" alt="art" class="img-fluid object-fit-cover d-none d-md-block">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/art26.jpg" alt="art" class="img-fluid d-none d-lg-block">
+                    <img src="assets/images/art26.jpg" alt="art" class="img-fluid object-fit-cover d-none d-lg-block">
                 </li>
                 <li class="col mx-auto">
-                    <img src="assets/images/art22.jpg" alt="art" class="img-fluid d-none d-lg-block">
+                    <img src="assets/images/art22.jpg" alt="art" class="img-fluid object-fit-cover d-none d-lg-block">
                 </li>
             </ul>
             <div class="d-lg-none text-center">
@@ -133,48 +133,118 @@ current: explore
            </div>
         </div>
         <div class="tab-pane collection active" id="collection" role="tabpanel" aria-labelledby="collection-tab">
-            <div class="row gx-3 gy-6 masonry" data-masonry='{"percentPosition": true }'>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <div class="artwork-img p-2 text-white mb-2">
+            <div class="row gx-3 gy-6" data-masonry='{"percentPosition": true,"horizontalOrder": true}'>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-1 p-2 text-white mb-2">
                         <div class="d-flex p-2 flex-column border border-1 border-white h-100">
                             <div class="mb-auto">
                                 <p>唯一想擁有的人，唯一不可以擁有的人</p>
-                                <span>300</span>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
                             </div>
                             <div class="mt-auto ms-auto">
-                                <a href="#" class="btn btn-outline-black triangle px-6 py-1 font-squada">MORE</a>
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
                             </div>
                         </div>
                     </div>
-                    <p class="fw-bold pb-2 border-bottom border-1 ">區塊戀-他的私生活</p>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1 ">區塊戀-他的私生活</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art10.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">夏娃的醜聞</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-2 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>跌入谷底，敗部復活</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">夏娃的醜聞</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art02.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">藍色啤酒海</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-3 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>喝吧，醉不是罪</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">藍色啤酒海</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art11.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">沒有人愛我</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-4 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>我難過的是</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">沒有人愛我</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art12.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">不哭不哭眼淚是珍珠</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-5 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>我哭了</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">不哭不哭眼淚是珍珠</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art03.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">十分鐘就到</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-6 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>都是騙人的好嗎</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">十分鐘就到</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art04.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">我這樣有美嗎</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-7 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>是的，老大！</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">我這樣有美嗎</h3>
                 </div>
-                <div class="masonry-item col-6 col-md-4 col-lg-3">
-                    <img src="assets/images/art27.jpg" alt="art" class="img-fluid bg-white p-3 mb-2">
-                    <p class="fw-bold pb-2 border-bottom border-1">我真的受傷了</p>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="artwork-img artwork-img-8 p-2 text-white mb-2">
+                        <div class="d-flex p-2 flex-column border border-1 border-white h-100">
+                            <div class="mb-auto">
+                                <p>幫QQ</p>
+                                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
+                            </div>
+                            <div class="mt-auto ms-auto">
+                                <a href="#" class="btn btn-outline-black px-2 px-lg-5 triangle font-squada">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-7 fw-bold pb-2 border-bottom border-1">我真的受傷了</h3>
                 </div>
             </div>
         </div>
@@ -184,12 +254,3 @@ current: explore
 
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-<script>
- var $grid = $('.masonry').imagesLoaded( function() {
-  $grid.masonry({
-    percentPosition:true,
-    itemSelector:".masonry-item",
-    horizontalOrder:ture,
-  });
-});
-</script>

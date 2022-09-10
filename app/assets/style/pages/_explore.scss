@@ -65,3 +65,9 @@
         right:0;
     }
 }
+.artist-media:hover{
+    color: $danger;
+}
+.object-fit-cover{
+    object-fit: cover;
+}

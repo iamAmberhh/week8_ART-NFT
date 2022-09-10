@@ -34,9 +34,20 @@
           <input class="form-control me-2 d-none d-md-block ps-lg-6 py-lg-5 search-bar" type="search"
             placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
         </div>
-        <button type="button" class="border-0 pe-md-6 py-md-5 search"><i class="fas fa-search"></i></button>
+        <button type="button" class="border-0 pe-md-6 py-md-5 search" data-bs-toggle="offcanvas" href="#searchCanvas" role="button" aria-controls="searchCanvas"><i class="fas fa-search"></i></button>
+        <div class="offcanvas offcanvas-top d-md-none" data-bs-backdrop="false" tabindex="-1" id="searchCanvas" aria-labelledby="searchCanvasLabel">
+          <div class="offcanvas-body container d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <a href="#" class="fs-3 align-bottom search-back" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-angle-left "></i></a>
+              <input class="form-control me-2 ps-lg-6 py-lg-5 search-bar" type="search"
+                placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+            </div>
+            <button class="border-0 pe-md-6 py-md-5 search"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
       </form>
-      <a class="navbar-toggler px-1" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <a class="navbar-toggler px-1 mt-1" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars navbar-toggler-icon"></i>
       </a>

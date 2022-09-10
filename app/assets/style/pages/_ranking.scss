@@ -1,6 +1,7 @@
 .table-icon{
     width: 48px;
     height: 48px;
+    object-fit: cover; 
 }
 .table-triangle{
     position: relative;
@@ -30,6 +31,9 @@
         }
     }
     @include media-breakpoint-up(lg){
+        a{
+            display: none;
+        }
         &::before{
             display: none;
         }
@@ -48,4 +52,7 @@
     &::after{
         border-bottom: 32px solid $danger;
     }
+}
+.art-hover:hover{
+    color:$danger;
 }
